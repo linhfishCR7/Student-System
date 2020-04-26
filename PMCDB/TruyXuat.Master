@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TruyXuat.master.cs" Inherits="PMCDB.TruyXuat" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>TRUY XUẤT SINH VIÊN</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/css/style-button.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="images/Logo_QLSV.png" />
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section class="cover">
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <div class="container ">
+                
+                    <div class="col-md-8 col-md-offset-1">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                <div class="col-md-3 col-sm-12">
+                <div class=" list-group">
+                    <div class="list-group-item maudo">
+                        1. STUDENT LIST                   
+                    </div>
+                    <div class="list-group-item">
+                        <asp:TreeView ID="TreeView3" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
+                            <Nodes>
+                                <asp:TreeNode Text="1.1  MANAGEMENT" Value="#" SelectAction="None">
+                                    <asp:TreeNode NavigateUrl="~/Management/R01_SinhVien.aspx" Text="1.1 Sinh Viên Theo Khoa" Value="#"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/Management//R01a_SinhVien.aspx" Text="1.1.2 Sinh Viên Theo Ngành" Value="#"></asp:TreeNode>
+                                </asp:TreeNode>
+                            </Nodes>
+                        </asp:TreeView>
+                        <asp:TreeView ID="TreeView4" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
+                            <Nodes>
+                                <asp:TreeNode Text="2.1  UPDATE" Value="#" SelectAction="None">
+                                     <asp:TreeNode NavigateUrl="~/Update/U02_KhoaHoc.aspx" Text="2.2.1 Khóa Học" Value="#"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/Update/U04_LopHoc.aspx" Text="2.2.2 Lớp Học" Value="#"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/Update/U06_MonHoc.aspx" Text="2.2.3 Môn Học" Value="#"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/Update/U07_KetQua.aspx" Text="2.2.4 Kết Quả" Value="#"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/Update/U08_GiangKhoa.aspx" Text="2.2.5 Giảng Khoa" Value="#"></asp:TreeNode>
+                                </asp:TreeNode>
+                            </Nodes>
+                        </asp:TreeView>
+                    </div>
+                </div>
+                <div class=" list-group">
+                    <div class="list-group-item maudo">
+                        2. Truy Xuất                        
+                    </div>
+                    <div class="list-group-item">
+                        <asp:TreeView ID="TreeView5" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
+                            <Nodes>
+                                <asp:TreeNode Text="2.1 Truy Xuất" Value="#" SelectAction="None">
+                                    <asp:TreeNode Text="2.1.1 SV Theo K-N-L" Value="#">
+                                        <asp:TreeNode NavigateUrl="~/Management/TruyXuat/R01_TruyXuatSinhVien.aspx" Text="2.1.1.1 Truy Xuất SV Theo Khoa" Value="#"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/Management/TruyXuat/R03_KeHoachChiTietKhoiLuong.aspx" Text="2.1.1.2 Truy Xuất SV Theo Ngành" Value="#"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/Management/TruyXuat/R03_KeHoachChiTietKhoiLuong.aspx" Text="2.1.1.2 Truy Xuất SV Theo Lớp" Value="#"></asp:TreeNode>
+
+                                    </asp:TreeNode>
+                                  <%--  <asp:TreeNode Text="2.1.2 Earning" Value="#">
+                                        <asp:TreeNode NavigateUrl="~/Management/KhoiLuong/R02_ThucHienTongHopKhoiLuong.aspx" Text="2.1.2.1 Quantity Summary" Value="#"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/Management/KhoiLuong/R04_ThucHienChiTietKhoiLuong.aspx" Text="2.1.2.2 Quantity Detail" Value="#"></asp:TreeNode>
+                                    </asp:TreeNode>--%>
+                                </asp:TreeNode>
+                            </Nodes>
+                        </asp:TreeView>
+                       <%-- <asp:TreeView ID="TreeView6" runat="server" Width="100%" NodeWrap="True" CssClass="table table-responsive">
+                            <Nodes>
+                                <asp:TreeNode Text="2.2 STUDENT UPDATE" Value="#" SelectAction="None">
+                                  
+                                   
+                                </asp:TreeNode>
+                            </Nodes>
+                        </asp:TreeView>--%>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            </div>
+
+            <script>
+            $(document).on("click", "a", function () {
+                if (this.innerHTML.indexOf("Delete") == 0) {
+                    return confirm("Are you sure to delete this record?");
+                }
+            });
+            
+        </script>
+        </form>
+    </section>
+</body>
+</html>

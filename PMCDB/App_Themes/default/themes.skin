@@ -1,0 +1,14 @@
+<asp:TextBox runat="server" class="form-control input-sm"></asp:TextBox>
+<asp:DropDownList runat="server" class="form-control input-sm"></asp:DropDownList>
+<asp:Button runat="server" class="btn btn-sm maudo" />
+<asp:LinkButton runat="server" class="btn btn-sm maudo"></asp:LinkButton>
+<asp:GridView runat="server" class="table table-condensed table-hover" CellPadding="4" GridLines="Horizontal" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
+                <FooterStyle BackColor="#CCCC99" ForeColor="#ffffff" />
+                <HeaderStyle Font-Bold="True" CssClass="mauxam" ForeColor="#ffffff"/>
+                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                <SelectedRowStyle BackColor="#d4d6cf" ForeColor="black"  />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                <SortedDescendingHeaderStyle BackColor="#242121" />
+</asp:GridView>
