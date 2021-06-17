@@ -35,7 +35,7 @@
                         </table>
                         <asp:GridView ID="GridView1" runat="server" Width="100%" HorizontalAlign="Center" OnRowCommand="GridView1_RowCommand"
                             AutoGenerateColumns="False"
-                            DataKeyNames="MaKhoa" CssClass="table" DataSourceID="SqlDataSource1">
+                            DataKeyNames="MaKhoa" CssClass="table"  DataSourceID="SqlDataSource1">
                             <Columns>
                                 <asp:ButtonField CommandName="editRecord" ButtonType="Link" Text='<i class="glyphicon glyphicon-edit"></i>' ItemStyle-Width="40px">
                                     <ControlStyle CssClass="btn btn-xs mauvang"></ControlStyle>

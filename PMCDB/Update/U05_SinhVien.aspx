@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="U05_SinhVien.aspx.cs" Inherits="PMCDB.Update.U05_SinhVien" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NewMain.Master" AutoEventWireup="true" CodeBehind="U05_SinhVien.aspx.cs" Inherits="PMCDB.Update.U05_SinhVien" %>
 
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="head">
     <style type="text/css">
@@ -15,7 +15,7 @@
             <div class="list-group-item limit-500">
                 <asp:UpdatePanel ID="upCrudGrid" runat="server">
                     <ContentTemplate>
-                        <table class="table">
+                        <table class="table table-responsive">
                             <tr>
                                 <td>Mã Lớp:</td>
                                 <td>
@@ -51,7 +51,7 @@
                         </table>
                         <asp:GridView ID="GridView1" runat="server" Width="100%" HorizontalAlign="Center" OnRowCommand="GridView1_RowCommand"
                             AutoGenerateColumns="False"
-                            DataKeyNames="MaSV" CssClass="table" DataSourceID="SqlDataSource1" EmptyDataText="No SV FOUND!">
+                            DataKeyNames="MaSV" CssClass="table table-striped table-hover table-responsive" DataSourceID="SqlDataSource1" EmptyDataText="No SV FOUND!">
                             <Columns>
                                 <asp:ButtonField CommandName="selectRecord" ButtonType="Link" Text='<i class="glyphicon glyphicon-list-alt"></i>' ItemStyle-Width="40px">
                                     <ControlStyle CssClass="btn maureu btn-xs"></ControlStyle>

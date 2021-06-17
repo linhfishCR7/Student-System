@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,6 +105,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
     <Content Include="Admin\A00_ChiTietUser.aspx" />
     <Content Include="Admin\A00_Admin.aspx" />
     <Content Include="Admin\A00_User.aspx" />
@@ -230,7 +233,232 @@
     <Content Include="DataSet\dsSinhVien.xss">
       <DependentUpon>dsSinhVien.xsd</DependentUpon>
     </Content>
+    <Content Include="NewMain.Master" />
+    <Content Include="NewLogin.Master" />
     <None Include="Properties\PublishProfiles\pmc.pubxml" />
+    <Content Include="Themes\beagle-dashboard\assets\css\app.css" />
+    <Content Include="Themes\beagle-dashboard\assets\img\1088x336.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\140x140.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\342x239.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\346x106.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\362x239.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\404-bg.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\529x161.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar-150.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar1.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar2.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar3.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar4.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar5.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\avatar6.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\bitbucket.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\docs\img1.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\docs\img2.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\docs\img3.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\dribbble.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\dropbox.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img1.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img10.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img11.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img12.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img2.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img3.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img4.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img5.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img6.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img7.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img8.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\gallery\img9.jpg" />
+    <Content Include="Themes\beagle-dashboard\assets\img\github.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\logo-fav.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\logo-symbol.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\logo-white-xx.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\logo-white.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\logo-xx.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\logo.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\mail_chimp.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\slack.png" />
+    <Content Include="Themes\beagle-dashboard\assets\img\user-profile-display.png" />
+    <Content Include="Themes\beagle-dashboard\assets\js\app.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\bootstrap-slider\bootstrap-slider.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\bootstrap-slider\css\bootstrap-slider.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\bs-custom-file-input\bs-custom-file-input.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\chartjs\Chart.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\countup\countUp.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-bs4\js\dataTables.bootstrap4.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-buttons-bs4\js\buttons.bootstrap4.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-buttons\js\buttons.colVis.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-buttons\js\buttons.flash.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-buttons\js\buttons.html5.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-buttons\js\buttons.print.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-buttons\js\dataTables.buttons.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\datatables.net\js\jquery.dataTables.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\jszip\jszip.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\pdfmake\pdfmake.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datatables\pdfmake\vfs_fonts.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datetimepicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\datetimepicker\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\dragula\dragula.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\dragula\dragula.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\dropzone\dropzone.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\dropzone\dropzone.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\fuelux\js\wizard.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\jquery.flot.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\jquery.flot.pie.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\jquery.flot.resize.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\jquery.flot.time.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\plugins\curvedLines.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\plugins\jquery.flot.orderBars.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-flot\plugins\jquery.flot.tooltip.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\addon\edit\matchbrackets.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\lib\codemirror.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\lib\codemirror.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\mode\css\css.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\mode\xml\xml.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.codemirror\theme\monokai.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.fullcalendar\fullcalendar.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.fullcalendar\fullcalendar.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.gritter\css\jquery.gritter.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.gritter\images\gritter-bg.png" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.gritter\images\gritter-light.png" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.gritter\images\gritter.png" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.gritter\images\ie-spacer.gif" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.gritter\js\jquery.gritter.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.magnific-popup\magnific-popup.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.maskedinput\jquery.maskedinput.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.nestable\jquery.nestable.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.niftymodals\js\jquery.niftymodals.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.sparkline\jquery.sparkline.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-au-mill-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-ca-lcc-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-fr-merc-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-in-mill-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-map.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-us-il-chicago-mill-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-us-merc-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery.vectormap\maps\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jquery\jquery.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jqvmap\jquery.vmap.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jqvmap\jqvmap.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\jqvmap\maps\jquery.vmap.world.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\masonry-layout\masonry.pkgd.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\material-design-icons\css\material-design-iconic-font.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\moment.js\min\moment.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\morrisjs\morris.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\morrisjs\morris.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\mprogress\css\mprogress.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\mprogress\js\mprogress.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\multiselect\css\multi-select.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\multiselect\img\switch.png" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\multiselect\js\jquery.multi-select.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\parsley\parsley.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\perfect-scrollbar\css\perfect-scrollbar.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\perfect-scrollbar\js\perfect-scrollbar.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\prettify\prettify.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\quicksearch\jquery.quicksearch.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\raphael\raphael.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Black.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BlackItalic.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Bold.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BoldItalic.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Light.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-LightItalic.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Medium.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-MediumItalic.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Regular.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-RegularItalic.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Thin.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-ThinItalic.svg" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\select2\css\select2.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\select2\js\select2.full.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\select2\js\select2.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\summernote-bs4.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\summernote-bs4.min.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\summernote-ext-beagle.js" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\sweetalert2\sweetalert2.min.css" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\sweetalert2\sweetalert2.min.js" />
+    <Content Include="Themes\beagle-dashboard\charts-chartjs.html" />
+    <Content Include="Themes\beagle-dashboard\charts-flot.html" />
+    <Content Include="Themes\beagle-dashboard\charts-morris.html" />
+    <Content Include="Themes\beagle-dashboard\charts-sparkline.html" />
+    <Content Include="Themes\beagle-dashboard\documentation.html" />
+    <Content Include="Themes\beagle-dashboard\email-compose.html" />
+    <Content Include="Themes\beagle-dashboard\email-inbox.html" />
+    <Content Include="Themes\beagle-dashboard\email-read.html" />
+    <Content Include="Themes\beagle-dashboard\form-elements.html" />
+    <Content Include="Themes\beagle-dashboard\form-masks.html" />
+    <Content Include="Themes\beagle-dashboard\form-multiselect.html" />
+    <Content Include="Themes\beagle-dashboard\form-upload.html" />
+    <Content Include="Themes\beagle-dashboard\form-validation.html" />
+    <Content Include="Themes\beagle-dashboard\form-wizard.html" />
+    <Content Include="Themes\beagle-dashboard\form-wysiwyg.html" />
+    <Content Include="Themes\beagle-dashboard\index.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-boxed-layout.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-collapsible-sidebar.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-danger-header.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-fixed-sidebar.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-mega-menu.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-nosidebar-left.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-nosidebar-right.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-nosidebars.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-offcanvas-menu.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-primary-header.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-search-input.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-sub-navigation.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-success-header.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-top-menu.html" />
+    <Content Include="Themes\beagle-dashboard\layouts-warning-header.html" />
+    <Content Include="Themes\beagle-dashboard\maps-google.html" />
+    <Content Include="Themes\beagle-dashboard\maps-vector.html" />
+    <Content Include="Themes\beagle-dashboard\pages-404.html" />
+    <Content Include="Themes\beagle-dashboard\pages-ajax-loader.html" />
+    <Content Include="Themes\beagle-dashboard\pages-blank-aside.html" />
+    <Content Include="Themes\beagle-dashboard\pages-blank-header.html" />
+    <Content Include="Themes\beagle-dashboard\pages-blank.html" />
+    <Content Include="Themes\beagle-dashboard\pages-booking.html" />
+    <Content Include="Themes\beagle-dashboard\pages-calendar.html" />
+    <Content Include="Themes\beagle-dashboard\pages-code-editor.html" />
+    <Content Include="Themes\beagle-dashboard\pages-forgot-password.html" />
+    <Content Include="Themes\beagle-dashboard\pages-gallery.html" />
+    <Content Include="Themes\beagle-dashboard\pages-invoice.html" />
+    <Content Include="Themes\beagle-dashboard\pages-loaders.html" />
+    <Content Include="Themes\beagle-dashboard\pages-login.html" />
+    <Content Include="Themes\beagle-dashboard\pages-login2.html" />
+    <Content Include="Themes\beagle-dashboard\pages-pricing-tables.html" />
+    <Content Include="Themes\beagle-dashboard\pages-pricing-tables2.html" />
+    <Content Include="Themes\beagle-dashboard\pages-profile.html" />
+    <Content Include="Themes\beagle-dashboard\pages-sign-up.html" />
+    <Content Include="Themes\beagle-dashboard\pages-timeline.html" />
+    <Content Include="Themes\beagle-dashboard\pages-timeline2.html" />
+    <Content Include="Themes\beagle-dashboard\tables-datatables.html" />
+    <Content Include="Themes\beagle-dashboard\tables-filters.html" />
+    <Content Include="Themes\beagle-dashboard\tables-general.html" />
+    <Content Include="Themes\beagle-dashboard\ui-alerts.html" />
+    <Content Include="Themes\beagle-dashboard\ui-buttons.html" />
+    <Content Include="Themes\beagle-dashboard\ui-cards.html" />
+    <Content Include="Themes\beagle-dashboard\ui-dragdrop.html" />
+    <Content Include="Themes\beagle-dashboard\ui-general.html" />
+    <Content Include="Themes\beagle-dashboard\ui-grid.html" />
+    <Content Include="Themes\beagle-dashboard\ui-icons.html" />
+    <Content Include="Themes\beagle-dashboard\ui-modals.html" />
+    <Content Include="Themes\beagle-dashboard\ui-nestable-lists.html" />
+    <Content Include="Themes\beagle-dashboard\ui-notifications.html" />
+    <Content Include="Themes\beagle-dashboard\ui-panels.html" />
+    <Content Include="Themes\beagle-dashboard\ui-sweetalert2.html" />
+    <Content Include="Themes\beagle-dashboard\ui-tabs-accordions.html" />
+    <Content Include="Themes\beagle-dashboard\ui-typography.html" />
     <Content Include="TruyXuat.Master" />
     <Content Include="QuanLySinhVienDataSet.xsc">
       <DependentUpon>QuanLySinhVienDataSet.xsd</DependentUpon>
@@ -243,11 +471,80 @@
     <Content Include="QuanLySinhVienDataSet.xss">
       <DependentUpon>QuanLySinhVienDataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="Update\beagle-dashboard\NewLoginHeThong.aspx" />
+    <Content Include="Update\beagle-dashboard\U01_Home.aspx" />
     <Content Include="UploadFile\tbl00_ChiTietUser.xlsx" />
     <Content Include="UploadFile\tbl00_Role.xlsx" />
     <Content Include="UploadFile\tbl00_User.xlsx" />
     <Content Include="UploadFile\tbl04_LopHoc.xlsx" />
     <Content Include="UploadFile\tbl05_SinhVien.xlsx" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\material-design-icons\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\material-design-icons\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\material-design-icons\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Black-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Black.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Black.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Black.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Black.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BlackItalic-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BlackItalic.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BlackItalic.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BlackItalic.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BlackItalic.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Bold-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Bold.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Bold.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Bold.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Bold.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BoldItalic-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BoldItalic.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BoldItalic.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BoldItalic.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-BoldItalic.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Light-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Light.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Light.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Light.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Light.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-LightItalic-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-LightItalic.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-LightItalic.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-LightItalic.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-LightItalic.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Medium-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Medium.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Medium.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Medium.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Medium.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-MediumItalic-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-MediumItalic.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-MediumItalic.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-MediumItalic.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-MediumItalic.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Regular-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Regular.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Regular.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Regular.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Regular.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-RegularItalic-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-RegularItalic.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-RegularItalic.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-RegularItalic.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-RegularItalic.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Thin-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Thin.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Thin.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Thin.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-Thin.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-ThinItalic-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-ThinItalic.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-ThinItalic.woff" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\roboto\Roboto-ThinItalic.woff2" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\font\summernote-1.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\font\summernote.eot" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\font\summernote.ttf" />
+    <Content Include="Themes\beagle-dashboard\assets\lib\summernote\font\summernote.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -747,6 +1044,19 @@
     <Compile Include="Management\TruyXuat\R01_TruyXuatSinhVien.aspx.designer.cs">
       <DependentUpon>R01_TruyXuatSinhVien.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NewLogin.Master.cs">
+      <DependentUpon>NewLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewLogin.Master.designer.cs">
+      <DependentUpon>NewLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewMain.Master.cs">
+      <DependentUpon>NewMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewMain.Master.designer.cs">
+      <DependentUpon>NewMain.Master</DependentUpon>
+    </Compile>
     <Compile Include="no-sidebar.aspx.cs">
       <DependentUpon>no-sidebar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -801,6 +1111,20 @@
     </Compile>
     <Compile Include="TruyXuat.Master.designer.cs">
       <DependentUpon>TruyXuat.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\NewLoginHeThong.aspx.cs">
+      <DependentUpon>NewLoginHeThong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\NewLoginHeThong.aspx.designer.cs">
+      <DependentUpon>NewLoginHeThong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\U01_Home.aspx.cs">
+      <DependentUpon>U01_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\U01_Home.aspx.designer.cs">
+      <DependentUpon>U01_Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Update\U00_PhanQuyenDuAn.aspx.cs">
       <DependentUpon>U00_PhanQuyenDuAn.aspx</DependentUpon>
