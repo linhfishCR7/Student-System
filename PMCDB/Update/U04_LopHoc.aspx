@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="U04_LopHoc.aspx.cs" Inherits="PMCDB.Update.U04_LopHoc" %>
 
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="head">
-    <style type="text/css">
-      
-    </style>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

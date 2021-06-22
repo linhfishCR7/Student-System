@@ -472,7 +472,9 @@
       <DependentUpon>QuanLySinhVienDataSet.xsd</DependentUpon>
     </Content>
     <Content Include="Update\beagle-dashboard\NewLoginHeThong.aspx" />
+    <Content Include="Update\beagle-dashboard\U00_PhanQuyenDuAn.aspx" />
     <Content Include="Update\beagle-dashboard\U01_Home.aspx" />
+    <Content Include="Update\beagle-dashboard\U02_Class.aspx" />
     <Content Include="UploadFile\tbl00_ChiTietUser.xlsx" />
     <Content Include="UploadFile\tbl00_Role.xlsx" />
     <Content Include="UploadFile\tbl00_User.xlsx" />
@@ -1046,6 +1048,7 @@
     </Compile>
     <Compile Include="NewLogin.Master.cs">
       <DependentUpon>NewLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NewLogin.Master.designer.cs">
       <DependentUpon>NewLogin.Master</DependentUpon>
@@ -1119,12 +1122,26 @@
     <Compile Include="Update\beagle-dashboard\NewLoginHeThong.aspx.designer.cs">
       <DependentUpon>NewLoginHeThong.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Update\beagle-dashboard\U00_PhanQuyenDuAn.aspx.cs">
+      <DependentUpon>U00_PhanQuyenDuAn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\U00_PhanQuyenDuAn.aspx.designer.cs">
+      <DependentUpon>U00_PhanQuyenDuAn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Update\beagle-dashboard\U01_Home.aspx.cs">
       <DependentUpon>U01_Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Update\beagle-dashboard\U01_Home.aspx.designer.cs">
       <DependentUpon>U01_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\U02_Class.aspx.cs">
+      <DependentUpon>U02_Class.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update\beagle-dashboard\U02_Class.aspx.designer.cs">
+      <DependentUpon>U02_Class.aspx</DependentUpon>
     </Compile>
     <Compile Include="Update\U00_PhanQuyenDuAn.aspx.cs">
       <DependentUpon>U00_PhanQuyenDuAn.aspx</DependentUpon>

@@ -37,7 +37,7 @@ namespace PMCDB.Update.beagle_dashboard
 
                 Session["Email"] = t.Rows[0]["Email"].ToString();
 
-                Response.Redirect("/Update/U00_PhanQuyenDuAn");
+                Response.Redirect("/Update/beagle-dashboard/U00_PhanQuyenDuAn");
             }
             else
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Vui lòng kiểm tra Tài Khoản, Mật Khẩu!');", true);
